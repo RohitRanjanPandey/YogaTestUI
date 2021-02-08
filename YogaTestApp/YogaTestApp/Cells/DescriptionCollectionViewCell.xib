@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DescriptionCellId" id="U6b-Vx-4bR" customClass="DescriptionCollectionViewCell" customModule="YogaTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-34-rst">
+                    <rect key="frame" x="8" y="5" width="74" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="6rV-9p-6LY"/>
+                        <constraint firstAttribute="height" constant="17" id="hBs-bs-X7X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0V-0Z-vqZ">
+                    <rect key="frame" x="10" y="100" width="300" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WNf-ZY-Vis"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-md-k9K">
+                    <rect key="frame" x="8" y="30" width="304" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="8eF-Ax-ApZ"/>
+                        <constraint firstAttribute="height" constant="59" id="qFq-G5-30D"/>
+                    </constraints>
+                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="r0V-0Z-vqZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="5fg-g2-zBP"/>
+                <constraint firstAttribute="trailing" secondItem="r0V-0Z-vqZ" secondAttribute="trailing" constant="10" id="Cra-D7-qF7"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="5aL-md-k9K" secondAttribute="trailing" constant="8" id="Ztc-fI-lyp"/>
+                <constraint firstItem="r0V-0Z-vqZ" firstAttribute="top" secondItem="5aL-md-k9K" secondAttribute="bottom" constant="11" id="hMP-yP-512"/>
+                <constraint firstItem="y2t-34-rst" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="hy6-9Y-6op"/>
+                <constraint firstItem="5aL-md-k9K" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="8" id="pmW-92-t6p"/>
+                <constraint firstItem="y2t-34-rst" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="vAG-3i-Q1y"/>
+                <constraint firstItem="5aL-md-k9K" firstAttribute="top" secondItem="y2t-34-rst" secondAttribute="bottom" constant="8" id="z2q-aL-f9g"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="75"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
