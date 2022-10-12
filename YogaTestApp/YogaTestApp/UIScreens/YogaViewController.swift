@@ -29,6 +29,7 @@ class YogaViewController: UICollectionViewController {
     // Register HeaderXib
     private func setupCollectionView() {
         self.collectionView.contentInsetAdjustmentBehavior = .never
+        self.collectionView.showsVerticalScrollIndicator = false
         let headerNib = UINib.init(nibName: YogaHeaderView.nibName, bundle: Bundle(for: YogaHeaderView.self))
         self.collectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: YogaHeaderView.identifier)
     }
@@ -98,6 +99,7 @@ extension YogaViewController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         self.yogaHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: YogaHeaderView.identifier, for: indexPath) as? YogaHeaderView
+        
         return self.yogaHeaderView!
     }
     

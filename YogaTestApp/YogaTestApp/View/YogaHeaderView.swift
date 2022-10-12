@@ -6,7 +6,7 @@ class YogaHeaderView: UICollectionReusableView {
     @IBOutlet var bannerImageView: UIImageView!
     @IBOutlet var ratingView: UIView!
     
-    var animator: UIViewPropertyAnimator!
+    var animator: UIViewPropertyAnimator = UIViewPropertyAnimator.init(duration: 0.1, curve: .linear)
 
     override func awakeFromNib() {
         super.awakeFromNib()
